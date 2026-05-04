@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa de Mascotas</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__title" href="index.html">Spa de Mascotas</a>
+        <nav class="header__nav">
+            <a href="" class="header__nav__item">Sobre Nosotros</a>
+            <a href="" class="header__nav__item">Reservas</a>
+            <a href="" class="header__nav__item">Servicios</a>
+            <a href="" class="header__nav__item">Productos</a>
+        </nav>
+        <a href="login.html" class="header__nav__item">Iniciar Sesion</a>
+    </header>
+
+    <div class="section content">
+        <div id="login-form">
+            <h3 id="form-title" class="section__title">Ingresa tus datos:</h3>
+            <form class="section__form" id="loginForm">
+                <div class="section__form__item">
+                    <label class="form__item-label">Email</label>
+
+                    <div class="form__item-container">
+                        <input type="text" class="emailInput" name="email" placeholder="hola@ejemplo.com">
+                    </div>
+
+                </div>
+                <small class="emailError"></small>
+
+                <div class="section__form__item">
+                    <label class="form__item-label">Contraseña</label>
+                    <div class="form__item-container password-wrapper">
+                        <input type="password" class="passwordInput" name="password" placeholder="Contraseña">
+
+                        <button type="button" id="togglePassword" class="toggle-password"
+                            aria-label="Mostrar contraseña">
+                            👁
+                        </button>
+                    </div>
+
+                </div>
+                <small class="passwordError"></small>
+                <div class="form__menu">
+                    <a href="#" class="f-pass">Olvidé mi contraseña</a>
+                    <a href="#" class="f-reg">Crear una Cuenta</a>
+                </div>
+
+                <input type="submit" value="Iniciar Sesion" class="hero__button">
+
+            </form>
+        </div>
+        <div id="register-form" class="hide">
+            <h3 id="form-title" class="section__title">Vamos a Registrarte:</h3>
+            <form class="section__form" id="registerForm">
+                <div class="section__form__item">
+                    <label class="form__item-label">Tipo de Usuario</label>
+
+                    <div class="form__item-container">
+                        <input type="radio" id="cliente" name="user" value="cliente">
+                        <label for="cliente">Cliente</label>
+
+                        <input type="radio" id="administrador" name="user" value="administrador">
+                        <label for="administrador">Administrador</label>
+                        <input type="radio" id="empleado" name="user" value="empleado">
+                        <label for="empleado">Empleado</label>
+                    </div>
+                </div>
+                <div class="section__form__item">
+                    <label class="form__item-label">Nombre</label>
+
+                    <div class="form__item-container">
+                        <input type="text" id="name" name="name" placeholder="Jack" required>
+                    </div>
+                </div>
+
+                <div class="section__form__item">
+                    <label class="form__item-label">Telefono</label>
+
+                    <div class="form__item-container">
+                        <input inputmode="numeric" type="text" id="phone" name="phone" placeholder="75898843" required>
+                    </div>
+                </div>
+                <small id="phoneError"></small>
+
+                <div class="section__form__item">
+                    <label class="form__item-label">Email</label>
+
+                    <div class="form__item-container">
+                        <input type="text" class="emailInput" name="email" placeholder="hola@ejemplo.com" required>
+                    </div>
+
+                </div>
+                <small class="emailError"></small>
+
+                <div class="section__form__item">
+                    <label class="form__item-label">Contraseña</label>
+                    <div class="form__item-container">
+                        <input type="password" class="passwordInput" name="password" placeholder="Contraseña" required>
+                    </div>
+
+                </div>
+                <small class="passwordError"></small>
+                <div class="form__menu">
+                    <a href="#" class="f-pass">Olvidé mi contraseña</a>
+                    <a href="#" class="f-log">Iniciar Sesion</a>
+                </div>
+
+                <input type="submit" value="Registrar Usuario" class="hero__button">
+
+            </form>
+        </div>
+        <div id="password-form" class="hide">
+            <h3 id="form-title" class="section__title">Ingresa tu Email para Recuperar tu Contraseña:</h3>
+            <form class="section__form" id="recoverForm">
+                <div class="section__form__item">
+                    <label class="form__item-label">Email</label>
+
+                    <div class="form__item-container">
+                        <input type="text" class="emailInput" name="email" placeholder="hola@ejemplo.com">
+                    </div>
+
+                </div>
+                <small class="emailError"></small>
+
+                <div class="form__menu">
+                    <a href="#" class="f-log">Iniciar Sesión</a>
+                    <a href="#" class="f-reg">Crear una Cuenta</a>
+                </div>
+
+                <input type="submit" value="Enviar Email" class="hero__button">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer__section">
+            <div class="footer__section-item">
+                <p>Calle Colombia 631</p>
+            </div>
+            <div class="footer__section-item">
+                <p>+591 76567897</p>
+            </div>
+            <div class="footer__section-item">
+                <p>Spa de Mascotas Jack</p>
+            </div>
+
+        </div>
+
+        <p>Todos los Derechos Reservados 2026</p>
+    </footer>
+
+    <script src="./login.js"></script>
+</body>
+
+</html>

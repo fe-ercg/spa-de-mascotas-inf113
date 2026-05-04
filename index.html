@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa de Mascotas</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__title" href="index.html">Spa de Mascotas</a>
+        <nav class="header__nav">
+            <a href="" class="header__nav__item">Sobre Nosotros</a>
+            <a href="" class="header__nav__item">Reservas</a>
+            <a href="" class="header__nav__item">Servicios</a>
+            <a href="" class="header__nav__item">Productos</a>
+        </nav>
+        <a href="login.html" class="header__nav__item">Iniciar Sesion</a>
+    </header>
+    <div class="hero">
+        <div class="hero__background">
+            <img src="src/wp1.png" alt="Fondo 1" class="hero__img">
+            <img src="src/wp2.png" alt="Fondo 2" class="hero__img">
+            <img src="src/wp3.png" alt="Fondo 3" class="hero__img">
+        </div>
+
+        <div class="hero__content">
+            <p class="hero__title">Mascotas Felices, <br> Humanos Felices</p>
+            <button href="" class="hero__button">Conoce nuestros servicios aquí</button>
+        </div>
+    </div>
+    <div class="section">
+        <h3 class="section__title">Somos los Mejores en:</h3>
+        <li class="section__list">
+            <ul class="section__list__item">Peluqueria</ul>
+            <ul class="section__list__item">Baños</ul>
+            <ul class="section__list__item">Desparacitaciones</ul>
+        </li>
+    </div>
+    <div class="section">
+        <h3 class="section__title">Lo mejor para cuidar a tu Mascota:</h3>
+        <li class="section__list">
+            <ul class="section__list__item">Shampos</ul>
+            <ul class="section__list__item">Cepillos</ul>
+            <ul class="section__list__item">Pipetas</ul>
+        </li>
+    </div>
+    <div class="section">
+        <h3 class="section__title">Vamos a Conocernos!</h3>
+        <form class="section__form">
+            <div class="section__form__item">
+                <label class="form__item-label">Mascota</label>
+
+                <div class="form__item-container">
+                    <input type="radio" id="perro" name="mascota" value="perro">
+                    <label for="perro">Perro</label>
+
+                    <input type="radio" id="gato" name="mascota" value="gato">
+                    <label for="gato">Gato</label>
+                </div>
+            </div>
+            <div class="section__form__item">
+                <label class="form__item-label">Interesado en</label>
+                <div class="form__item-container">
+
+                    <!-- Opción 1 -->
+                    <label class="checkbox-option">
+                        <input type="checkbox" id="corte" name="services" value="corte">
+                        Corte
+                    </label>
+
+                    <!-- Opción 2 -->
+                    <label class="checkbox-option">
+                        <input type="checkbox" id="baño" name="services" value="baño">
+                        <span class="custom-box"></span>
+                        Baño
+                    </label>
+
+                    <!-- Opción 3 -->
+                    <label class="checkbox-option">
+                        <input type="checkbox" id="desparacitaciones" name="services" value="desparacitaciones">
+                        <span class="custom-box"></span>
+                        Desparacitación
+                    </label>
+
+                </div>
+            </div>
+
+            <div class="section__form__item">
+                <label class="form__item-label">Fecha y Hora</label>
+                <div class="form__item-container">
+                    <input type="date" id="fecha" name="fecha" value="">
+                    <input type="time" id="hora" name="hora" value="">
+                </div>
+            </div>
+
+            <input type="submit" value="Reservar" class="hero__button">
+
+        </form>
+    </div>
+    <footer>
+        <div class="footer__section">
+            <div class="footer__section-item">
+                <p>Calle Colombia 631</p>
+            </div>
+            <div class="footer__section-item">
+                <p>+591 76567897</p>
+            </div>
+            <div class="footer__section-item">
+                <p>Spa de Mascotas Jack</p>
+            </div>
+
+        </div>
+
+        <p>Todos los Derechos Reservados 2026</p>
+    </footer>
+</body>
+
+</html>

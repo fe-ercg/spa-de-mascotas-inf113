@@ -1,0 +1,23 @@
+[
+  {
+    "tipo_usuario": "administrador",
+    "nombre": "Jack Gomez",
+    "telefono": "76598809",
+    "email": "jack@spaj.com",
+    "contrasena": "Jack2026."
+  },
+  {
+    "tipo_usuario": "empleado",
+    "nombre": "Mike Ruiz",
+    "telefono": "76774661",
+    "email": "mike@spaj.com",
+    "contrasena": "Mike2026."
+  },
+  {
+    "tipo_usuario": "cliente",
+    "nombre": "Laura Gutierrez",
+    "telefono": "62687882",
+    "email": "laura@mail.bo",
+    "contrasena": "Laura2026."
+  }
+]
